@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navoric Technologies | Premium IT Consulting & Services</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+<style>
+:root{
+  --primary:#0b5bd8;
+  --gradient:linear-gradient(135deg,#0b5bd8,#1e88ff,#4cc3ff);
+  --bg:#f5f8ff;
+  --text:#0f172a;
+  --muted:#475569;
+  --card:rgba(255,255,255,0.65);
+  --shadow:0 12px 30px rgba(0,0,0,0.08);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,system-ui;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:20px 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:50;
+  background:transparent;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:800;
+  color:white;
+}
+
+nav a{
+  margin-left:22px;
+  color:#ffffffcc;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.hero{
+  min-height:100vh;
+  background:var(--gradient);
+  color:white;
+  display:flex;
+  align-items:center;
+  padding:0 10%;
+}
+
+.hero h1{
+  font-size:56px;
+  font-weight:800;
+  margin-bottom:16px;
+}
+
+.hero p{
+  font-size:18px;
+  max-width:650px;
+  color:#eef5ff;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:26px;
+  padding:14px 28px;
+  background:white;
+  color:var(--primary);
+  border-radius:12px;
+  font-weight:700;
+  text-decoration:none;
+}
+
+.section{
+  padding:90px 10%;
+}
+
+.section h2{
+  font-size:34px;
+  font-weight:800;
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.section-desc{
+  text-align:center;
+  color:var(--muted);
+  max-width:760px;
+  margin:0 auto 50px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:28px;
+}
+
+.card{
+  background:var(--card);
+  backdrop-filter:blur(16px);
+  border-radius:20px;
+  padding:28px;
+  box-shadow:var(--shadow);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+}
+
+.card h3{
+  font-size:22px;
+  margin-bottom:12px;
+  display:flex;
+  gap:10px;
+}
+
+.card ul{
+  padding-left:18px;
+  margin:0;
+}
+
+.check li{
+  list-style:none;
+  margin-bottom:8px;
+}
+.check li::before{
+  content:"✔";
+  margin-right:8px;
+  color:var(--primary);
+  font-weight:700;
+}
+
+footer{
+  background:#0b5bd8;
+  color:white;
+  text-align:center;
+  padding:50px 20px;
+  margin-top:80px;
+}
+
+@media(max-width:768px){
+  header{padding:18px 24px}
+  .hero h1{font-size:40px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Navoric Technologies</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#industries">Industries</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Innovating Technology.<br>Empowering Businesses.</h1>
+    <p>Navoric Technologies delivers reliable IT consulting, custom software development, expert staffing solutions, and secure cloud services to help companies scale faster and operate smarter.</p>
+    <a href="#services" class="btn">Explore Services</a>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>About Navoric Technologies</h2>
+  <p class="section-desc">
+    Navoric Technologies is a next-generation IT consulting and services company delivering reliable, scalable, and future-ready technology solutions.
+    We blend innovation, expertise, and industry experience to help businesses achieve operational excellence and transform digitally.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <h3><i class="ri-eye-line"></i> Our Vision</h3>
+      <p>To become a globally trusted technology partner known for innovation, integrity, and exceptional delivery.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="ri-flag-line"></i> Our Mission</h3>
+      <p>To empower organizations with intelligent IT solutions, skilled talent, and modern digital capabilities that drive long-term success.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="ri-star-line"></i> Core Strengths</h3>
+      <ul>
+        <li>Customer-first approach</li>
+        <li>Transparent communication</li>
+        <li>Highly skilled technology specialists</li>
+        <li>Quality & on-time delivery</li>
+        <li>Flexible engagement models</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <p class="section-desc">End-to-end technology solutions under one roof</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3><i class="ri-lightbulb-line"></i> IT Consulting</h3>
+      <p>We guide your business through the right technology decisions.</p>
+      <ul>
+        <li>Digital transformation consulting</li>
+        <li>Technology strategy & roadmap</li>
+        <li>Business process optimization</li>
+        <li>Cloud adoption & modernization</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><i class="ri-code-box-line"></i> Software Development</h3>
+      <p>Scalable, user-friendly applications tailored to your needs.</p>
+      <ul>
+        <li>Web & mobile applications</li>
+        <li>Enterprise software</li>
+        <li>Automation & workflows</li>
+        <li>API & legacy modernization</li>
+      </ul>
+      <p><strong>Tech Stack:</strong> Java, .NET, Python, Node.js, React, Angular, Flutter, AWS, Azure</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="ri-team-line"></i> IT Staffing & Resource Augmentation</h3>
+      <ul class="check">
+        <li>Pre-vetted professionals</li>
+        <li>Fast hiring</li>
+        <li>Flexible engagement</li>
+        <li>Cost-efficient models</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><i class="ri-cloud-line"></i> Cloud Services</h3>
+      <ul>
+        <li>Cloud migrations</li>
+        <li>Architecture & deployment</li>
+        <li>DevOps & CI/CD</li>
+        <li>Security & governance</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><i class="ri-robot-line"></i> AI & Automation</h3>
+      <ul>
+        <li>AI consulting & strategy</li>
+        <li>Chatbots & virtual assistants</li>
+        <li>Machine learning & analytics</li>
+        <li>Generative AI solutions</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><i class="ri-graduation-cap-line"></i> Corporate Training</h3>
+      <ul>
+        <li>Software development & full stack</li>
+        <li>Cloud platforms & DevOps</li>
+        <li>Data & cybersecurity fundamentals</li>
+      </ul>
+      <p><strong>Modes:</strong> Corporate | Online | Customized</p>
+    </div>
+  </div>
+</section>
+
+<section id="industries" class="section">
+  <h2>Industries We Serve</h2>
+  <div class="grid">
+    <div class="card">Information Technology</div>
+    <div class="card">Pharmaceutical</div>
+    <div class="card">Telecom</div>
+    <div class="card">Healthcare</div>
+    <div class="card">E-commerce & Retail</div>
+    <div class="card">Financial Services</div>
+    <div class="card">Manufacturing</div>
+    <div class="card">Education & E-learning</div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p class="section-desc">Your Trusted Partner for Modern IT Solutions</p>
+
+  <div class="grid">
+    <div class="card">
+      <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+      <p><strong>Email:</strong> info@navorictech.com</p>
+      <p><strong>Website:</strong> www.navorictech.com</p>
+      <p><strong>Location:</strong> Hyderabad</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Navoric Technologies. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
